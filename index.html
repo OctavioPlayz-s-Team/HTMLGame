@@ -15,14 +15,14 @@ canvas {
 var myGamePiece;
 
 function startGame() {
-    myGamePiece = new component(60, 60, "Images/Untitled.png", 10, 120, "image");
+    myGamePiece = new component(120, 120, "Images/Untitled.png", 10, 120, "image");
     myGameArea.start();
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 1000;
+        this.canvas.width = 1500;
         this.canvas.height = 700;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
